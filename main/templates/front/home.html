@@ -1,0 +1,123 @@
+{% load static %}
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Blockchain, Bitcoin, User Auth, currency, data_factor,future oriented, Micropayemts-system">
+    <meta name="author" content="Vikas Yadav">
+
+    <title>HOME</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/business-casual.min.css' %}" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #FF8C00;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #FF8C00;
+        color: white;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!--<h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">{{title.tag}}</span>
+      <span class="site-heading-lower">{{title.Name}}</span>
+    </h1>-->
+
+    <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact Us</a>
+      <a href="{% url 'mine_block' %}">Payments</a>
+      <a class="nav-link text-uppercase text-expanded" href="/blog">blog</a>
+      <a href="#" style="margin-left:55%;">{{request.user}}</a>
+    </div>
+
+    <section class="page-section clearfix">
+      <div class="container">
+        <div class="intro">
+          <img class="intro-img img-fluid mb-2 rounded" style="height:90px; margin-left:20px; margin-top:20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0cIiMWG1hoWsITlmlnFQxRvZNCg940b25Q&usqp=CAU" alt=""><b><i style="font-size:30px;">bitcoin</i></b>
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <center><i><p style="font-size:80px;">Bitcoin is an innovative payment network and a new kind of money.</p></i></center>
+            <center><a style="background-color:black; color:white; padding:30px;" href="/profile">Get started with Bitcoin</a></center>
+            <br><br><br><center><h2 class="section-heading mb-4">
+              <span class="section-heading-upper">bienvenidos !</span>
+              <span class="section-heading-lower">The UNIVERSAL CURRENCY</span>
+            </h2>
+            <p class="mb-3">We believe in singularity.We believe in uniqueness.
+              So We Created a central Currency, accepted by all countries and<b> allow users to perform a very small payment</b>.
+            </p></center>
+            <div class="intro-button mx-auto">
+              <a class="btn btn-primary btn-xl" href="/sign-up/">"Let's get started"</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <center><h2 class="section-heading mb-4">
+                <span class="section-heading-upper">•••  Micro Idea Behind •••</span>
+                <span class="section-heading-lower">The Concept of <b> Cryptocoin</b>™</span>
+              </h2>
+              <p class="mb-0"> The basic idea for which the world Invented the coin to do micropayments. Unlike currency,notes coins have lower value like paise, or cents. So we created a digital coin whose value is fixed and can be use as trade in all around the planet. For more information read <b>HOW IT WORKS</b> section.
+              </p></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'front/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'front/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
