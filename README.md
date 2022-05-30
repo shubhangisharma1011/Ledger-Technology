@@ -1,4 +1,4 @@
-# Ledger-Technology
+# Ledger-Technology using python django 
 Create a virtualenv and install the requirements.txt 
 Python3 manage.py runserver/python manage.py runserver
 Home Page:
